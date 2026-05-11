@@ -15,26 +15,7 @@ Built with Python + PySide6 (Qt6). Works on KDE Plasma, GNOME, and any Linux des
 
 ## Screenshot
 
-```
-┌──────────────────────────────────────────────────┐
-│  GPU Manager                                     │
-│  ─────────────────────────────────────────────── │
-│  Current Mode:  [ Integrated ]                   │
-│  ┌──────────────────┐  ┌──────────────────┐      │
-│  │ █ Intel  ● ACTIVE│  │ █ NVIDIA  OFFLINE│      │
-│  │──────────────────│  │──────────────────│      │
-│  │ Mesa Intel(R)    │  │ NVIDIA GPU       │      │
-│  │ Graphics (RPL-S) │  │                  │      │
-│  │                  │  │ GPU is powered off│      │
-│  │ Temperature: 42°C│  └──────────────────┘      │
-│  │ Utilization: 0%  │                            │
-│  └──────────────────┘                            │
-│  OpenGL Renderer: Mesa Intel(R) Graphics (RPL-S) │
-│                                                   │
-│  [Integrated]  [Hybrid]  [Nvidia]                 │
-│                         [Refresh]                 │
-└──────────────────────────────────────────────────┘
-```
+![GPU Manager Screenshot](gpu-manager.png)
 
 ## Requirements
 
