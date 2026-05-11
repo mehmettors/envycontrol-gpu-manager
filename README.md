@@ -27,24 +27,7 @@ Built with Python + PySide6 (Qt6). Works on KDE Plasma, GNOME, and any Linux des
 
 ## Installation
 
-### Option 1: Pre-built binary (recommended)
-
-Download the latest release from the [Releases page](https://github.com/mehmettors/envycontrol-gpu-manager/releases).
-
-```bash
-# Download and make executable
-wget https://github.com/mehmettors/envycontrol-gpu-manager/releases/latest/download/gpu-manager
-chmod +x gpu-manager
-
-# Run directly
-./gpu-manager
-
-# Or install to PATH
-mkdir -p ~/.local/bin
-cp gpu-manager ~/.local/bin/
-```
-
-### Option 2: Build from source
+### Option 1: Build from source (recommended)
 
 ```bash
 # Clone the repository
@@ -59,12 +42,31 @@ python3 -m venv venv
 ./venv/bin/python main.py
 ```
 
-### Option 3: Build standalone binary
+### Option 2: Standalone binary
+
+Build your own standalone binary with PyInstaller (no Python/Qt needed to run):
 
 ```bash
+# After cloning the repo (see Option 1)
 pip install pyinstaller
 pyinstaller --onefile --name "gpu-manager" --hidden-import "PySide6.QtCore" --hidden-import "PySide6.QtGui" --hidden-import "PySide6.QtWidgets" main.py
 # Binary is at: dist/gpu-manager
+```
+
+Or use the provided build script:
+
+```bash
+./build.sh
+```
+
+### Option 3: Pre-built release binary
+
+Download from the [Releases page](https://github.com/mehmettors/envycontrol-gpu-manager/releases) when available:
+
+```bash
+wget https://github.com/mehmettors/envycontrol-gpu-manager/releases/latest/download/gpu-manager
+chmod +x gpu-manager
+./gpu-manager
 ```
 
 ## Usage
@@ -112,28 +114,6 @@ kbuildsycoca6
 ```
 
 Now find "GPU Manager" in your application menu.
-
-## Building from Source (full build script)
-
-```bash
-cd envycontrol-gpu-manager
-
-# Install dependencies
-python3 -m venv venv
-./venv/bin/pip install -r requirements.txt pyinstaller
-
-# Build standalone binary
-./venv/bin/pyinstaller --onefile --name "gpu-manager" --hidden-import "PySide6.QtCore" --hidden-import "PySide6.QtGui" --hidden-import "PySide6.QtWidgets" main.py
-
-# Output: dist/gpu-manager
-# Binary size: ~86 MB (self-contained, includes Qt6 and Python)
-```
-
-Or use the provided build script:
-
-```bash
-./build.sh
-```
 
 ## Uninstall
 
