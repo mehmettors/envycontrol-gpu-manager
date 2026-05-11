@@ -29,11 +29,11 @@ Built with Python + PySide6 (Qt6). Works on KDE Plasma, GNOME, and any Linux des
 
 ### Option 1: Pre-built binary (recommended)
 
-Download the latest release from the [Releases page](https://github.com/anomalyco/envycontrol-gpu-manager/releases).
+Download the latest release from the [Releases page](https://github.com/mehmettors/envycontrol-gpu-manager/releases).
 
 ```bash
 # Download and make executable
-wget https://github.com/anomalyco/envycontrol-gpu-manager/releases/latest/download/gpu-manager
+wget https://github.com/mehmettors/envycontrol-gpu-manager/releases/latest/download/gpu-manager
 chmod +x gpu-manager
 
 # Run directly
@@ -48,7 +48,7 @@ cp gpu-manager ~/.local/bin/
 
 ```bash
 # Clone the repository
-git clone https://github.com/anomalyco/envycontrol-gpu-manager.git
+git clone https://github.com/mehmettors/envycontrol-gpu-manager.git
 cd envycontrol-gpu-manager
 
 # Create virtual environment and install dependencies
