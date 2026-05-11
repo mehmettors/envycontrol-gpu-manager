@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GPU Manager
+Comment=View and switch between graphics cards (envycontrol)
+Exec=/home/mehmet/.local/bin/gpu-manager
+Icon=gpu-manager
+Terminal=false
+Type=Application
+Categories=System;HardwareSettings;Settings;X-KDE-settings-hardware;
+Keywords=gpu;graphics;nvidia;intel;envycontrol;
+StartupNotify=true
